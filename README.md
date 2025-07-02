@@ -1,10 +1,6 @@
-basically a dumdum file for a snek game
+basically a dumdum file for a snek game using C++ graphics
 
-idk shit actually
-under the 1T Finals Graphics are the bare minimum resources i used
-
-iirc, it has some edge thingy problem
+iirc, it has some edge thing problem wherein it doesn't recognize the correct "walls" of the game.
 
 
-atleast i did sumn, ig :"(
-ps. used VS
+ps. used VSC
