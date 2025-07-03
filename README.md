@@ -1,6 +1,6 @@
-basically a dumdum file for a snek game using C++ graphics
+Snake game using C++ graphics (followed through a YT tutorial)
 
-iirc, it has some edge thing problem wherein it doesn't recognize the correct "walls" of the game.
+PS: it has some edge thing problem wherein it doesn't recognize the correct "walls" of the game (not yet corrected)
 
 
-ps. used VSC
+
