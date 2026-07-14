@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Snake Graphics",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Finals_GRAPHICS/x64/Debug/Finals_GRAPHICS.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/Finals_GRAPHICS/x64/Debug",
+      "environment": [],
+      "console": "integratedTerminal",
+      "preLaunchTask": "Build Snake Graphics"
+    }
+  ]
+}

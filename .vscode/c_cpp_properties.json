@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe",
+      "includePath": [
+        "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/include",
+        "${workspaceFolder}/../vcpkg/packages/raylib_x64-windows/include"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/../vcpkg/packages/raylib_x64-windows/include",
+          "${workspaceFolder}/Finals_GRAPHICS/Finals_GRAPHICS"
+        ]
+      },
+      "intelliSenseMode": "windows-msvc-x64",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
