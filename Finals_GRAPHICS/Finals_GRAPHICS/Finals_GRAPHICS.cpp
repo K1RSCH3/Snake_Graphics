@@ -18,7 +18,7 @@ const int playableMaxCell = cellcount - 1;
 
 double lastUpdateTime = 0; // time last update
 
-filesystem::path FindAssetPath(const char* fileName)
+filesystem::path FindAssetPath(const char *fileName)
 {
 	filesystem::path appDirectory = filesystem::path(GetApplicationDirectory());
 	vector<filesystem::path> candidates = {
@@ -27,7 +27,7 @@ filesystem::path FindAssetPath(const char* fileName)
 		appDirectory / ".." / ".." / ".." / "1T Finals Graphics" / fileName,
 		appDirectory / ".." / ".." / ".." / ".." / "1T Finals Graphics" / fileName};
 
-	for (const filesystem::path& candidate : candidates)
+	for (const filesystem::path &candidate : candidates)
 	{
 		filesystem::path normalizedCandidate = candidate.lexically_normal();
 		if (filesystem::exists(normalizedCandidate))
@@ -51,7 +51,7 @@ bool ElementInDeque(Vector2 element, deque<Vector2> deque)
 	return false;
 }
 
-bool eventTriggered(double interval) // its like, checking time after and update, bacially like an update rate
+bool eventTriggered(double interval) // its like, checking time after and update, basically like an update rate
 {
 	double currentTime = GetTime();
 	if (currentTime - lastUpdateTime >= interval)
