@@ -13,6 +13,7 @@ Color neonpink = {255, 97, 248, 255};
 const int cellsize = 30;
 const int cellcount = 25;
 const int offset = 75;
+const int borderThickness = 5;
 const int playableMinCell = 1;
 const int playableMaxCell = cellcount - 1;
 
@@ -287,8 +288,7 @@ int main()
 		}
 		// DRAW
 		ClearBackground(BLACK);
-		DrawRectangleLinesEx(Rectangle{static_cast<float>(offset + playableMinCell * cellsize - 5), static_cast<float>(offset + playableMinCell * cellsize - 5), static_cast<float>(cellsize * (playableMaxCell - playableMinCell + 1) + 10), static_cast<float>(cellsize * (playableMaxCell - playableMinCell + 1) + 10)}, 5, neonpink);
-		;
+		DrawRectangleLinesEx(Rectangle{static_cast<float>(offset - borderThickness), static_cast<float>(offset - borderThickness), static_cast<float>(cellsize * cellcount + borderThickness * 2), static_cast<float>(cellsize * cellcount + borderThickness * 2)}, borderThickness, neonpink);
 		DrawText("CYBERSNEK", offset - 5, 20, 40, neonpink); // text, x, y, fontsize, color
 		DrawText(TextFormat("%i", game.score), offset - 5, offset + cellsize * cellcount + 10, 40, neonpink);
 		game.Draw();
