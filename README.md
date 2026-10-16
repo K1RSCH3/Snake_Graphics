@@ -57,6 +57,24 @@ Snake_Graphics/
 
 ## Build and Launch
 
+### Run the existing game
+
+Double-click `Run-Game.cmd` in Windows File Explorer. This starts the included
+Windows executable with its DLLs and assets. No runner extension is needed.
+If startup fails, the launcher keeps the error messages visible.
+
+From a PowerShell terminal opened in the parent `GitHub` folder, run:
+
+```powershell
+.\Snake_Graphics\Run-Game.cmd
+```
+
+If your terminal is already inside `Snake_Graphics`, run `.\Run-Game.cmd`.
+In VS Code with `Snake_Graphics` opened as the folder, you can also choose
+**Terminal > Run Task > Run Snake Graphics**. This runs the existing build.
+
+### Build from source
+
 Open this folder in VS Code:
 
 ```text
